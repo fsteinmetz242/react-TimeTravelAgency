@@ -3,6 +3,7 @@ import { destinationLoader } from "../data/destinationsLoader";
 import Header from "../pages/Header";
 import DestinationsPage from "../pages/DestinationsPage";
 import { Outlet } from "react-router";
+import Footer from "../pages/Footer";
 
 export default function MainLayout() {
   const [destinations, setDestinations] = useState([]);
@@ -19,9 +20,11 @@ export default function MainLayout() {
   return (
     <div className="body">
       <Header />
+
       {/* Outlet rendert die Child-Routes an dieser Stelle */}
       {/* context prop übergibt Daten an alle Child-Components */}
       <Outlet context={destinations} />
+      <Footer />
       <footer>&copy; footerbla</footer>
     </div>
   );

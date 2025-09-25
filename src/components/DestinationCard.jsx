@@ -2,9 +2,11 @@
 // von Daisy UI
 
 const DestinationCard = ({ destination }) => {
-  const { id, image, title, description } = destination;
+  console.log("DestinationCard: <destination>:");
+  console.log(destination);
+  const { id, image, title, description, slug } = destination;
 
-  console.log("id; ", id, "  image: ", image);
+  console.log("id; ", id, "  image: ", image, "  slug: ", slug);
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure className="px-10 pt-10">

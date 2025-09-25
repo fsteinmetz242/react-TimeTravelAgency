@@ -3,14 +3,12 @@
 //    When the Search button is clicked, navigate to the Destinations page.
 
 import DestinationsPage from "./DestinationsPage";
-import NavBar from "./NavBar";
-import SearchBar from "./SearchBar";
+import { NavBar } from "../components";
 
 const Header = () => {
   return (
     <header className="header">
-      <p>Home:</p>
-      <p>ToDo: Searchbar bei onClick navigieren nach Dest. Page</p>
+      <NavBar />
     </header>
   );
 };
