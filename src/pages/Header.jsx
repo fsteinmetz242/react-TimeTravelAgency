@@ -2,17 +2,16 @@
 //    Display a search bar with criteria such as origin, destination, dates, etc.
 //    When the Search button is clicked, navigate to the Destinations page.
 
+import DestinationsPage from "./DestinationsPage";
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 
-const HomePage = () => {
+const Header = () => {
   return (
-    <div className="rounded-2xl bg-green-300">
+    <header className="header">
       <p>Home:</p>
       <p>ToDo: Searchbar bei onClick navigieren nach Dest. Page</p>
-      <NavBar />
-      <SearchBar />
-    </div>
+    </header>
   );
 };
-export default HomePage;
+export default Header;
